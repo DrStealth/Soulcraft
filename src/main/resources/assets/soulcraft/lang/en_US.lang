@@ -1,0 +1,8 @@
+# items
+item.soulManualV1.name=Soul Manual
+
+# blocks
+tile.soulGlass.name=Soul Glass
+
+# creative tabs
+itemGroup.tabSoulcraft=Soulcraft

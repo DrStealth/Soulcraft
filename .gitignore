@@ -1,0 +1,9 @@
+/eclipse
+.idea
+.gradle
+/build
+/run
+/Soulcraft.iml
+/Soulcraft.ipr
+/Soulcraft.iws
+/out
