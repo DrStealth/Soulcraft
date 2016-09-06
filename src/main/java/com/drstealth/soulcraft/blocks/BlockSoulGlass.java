@@ -2,7 +2,6 @@ package com.drstealth.soulcraft.blocks;
 
 import com.drstealth.soulcraft.reference.RegisterEnumRef;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MaterialTransparent;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraftforge.fml.relauncher.Side;

@@ -8,6 +8,7 @@ import com.drstealth.soulcraft.creativetab.SoulcraftTab;
 import com.drstealth.soulcraft.init.ModBlocks;
 import com.drstealth.soulcraft.init.ModCrafting;
 import com.drstealth.soulcraft.init.ModItems;
+import com.drstealth.soulcraft.network.NetworkHandler;
 import com.drstealth.soulcraft.reference.Reference;
 import com.drstealth.soulcraft.handler.ConfigurationHandler;
 import com.drstealth.soulcraft.proxy.IProxy;
@@ -51,6 +52,7 @@ public class Soulcraft
         ModBlocks.register();
 
         proxy.preInit();
+        NetworkHandler.init();
     }
 
     @EventHandler
