@@ -5,9 +5,11 @@ package com.drstealth.soulcraft;
  */
 
 import com.drstealth.soulcraft.creativetab.SoulcraftTab;
+import com.drstealth.soulcraft.handler.GuiHandler;
 import com.drstealth.soulcraft.init.ModBlocks;
 import com.drstealth.soulcraft.init.ModCrafting;
 import com.drstealth.soulcraft.init.ModItems;
+import com.drstealth.soulcraft.init.ModTileEntities;
 import com.drstealth.soulcraft.network.NetworkHandler;
 import com.drstealth.soulcraft.reference.Reference;
 import com.drstealth.soulcraft.handler.ConfigurationHandler;
@@ -23,6 +25,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.EventBus;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION,
         acceptedMinecraftVersions = Reference.ACCEPTED_VERSIONS, guiFactory = Reference.GUI_FACTORY_CLASS)
@@ -47,12 +50,14 @@ public class Soulcraft
 
         ModItems.init();
         ModBlocks.init();
+        ModTileEntities.init();
 
         ModItems.register();
         ModBlocks.register();
 
         proxy.preInit();
         NetworkHandler.init();
+        NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
     }
 
     @EventHandler
