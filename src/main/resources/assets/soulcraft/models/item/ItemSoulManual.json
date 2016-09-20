@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "soulcraft:items/soul_manual_v1"
+  }
+}
