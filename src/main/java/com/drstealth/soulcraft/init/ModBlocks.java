@@ -1,7 +1,9 @@
 package com.drstealth.soulcraft.init;
 
 import com.drstealth.soulcraft.blocks.BlockSC;
+import com.drstealth.soulcraft.blocks.BlockSoulCompressor;
 import com.drstealth.soulcraft.blocks.BlockSoulGlass;
+import com.drstealth.soulcraft.blocks.BlockSoulTank;
 import com.drstealth.soulcraft.reference.Reference;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -17,15 +19,21 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModBlocks
 {
     public static BlockSC soulGlass;
+    public static BlockSC soulTank;
+    public static BlockSC soulCompressor;
 
     public static void init()
     {
         soulGlass = new BlockSoulGlass();
+        soulTank = new BlockSoulTank();
+        soulCompressor = new BlockSoulCompressor();
     }
 
     public static void register()
     {
         registerBlock(soulGlass);
+        registerBlock(soulTank);
+        registerBlock(soulCompressor);
     }
 
     private static void registerBlock(BlockSC blockSC)
@@ -39,13 +47,13 @@ public class ModBlocks
     public static void registerRenders()
     {
         registerRender(soulGlass);
+        registerRender(soulTank);
+        registerRender(soulCompressor);
     }
 
     private static void registerRender(BlockSC blockSC)
     {
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(blockSC), 0,
                 new ModelResourceLocation(blockSC.getRegistryName(), "inventory"));
-        //Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(blockSC), 0,
-        //        new ModelResourceLocation(Reference.MOD_ID + ":" + blockSC.getRegistryName(), "inventory"));
     }
 }

@@ -1,8 +1,11 @@
 # items
-item.soulManualV1.name=Soul Manual
+item.soulManual.name=Soul Manual
+item.soulShard.name=Soul Shard
 
 # blocks
 tile.soulGlass.name=Soul Glass
+tile.soulTank.name=Tank
+tile.soulCompressor.name=Compressor
 
 # creative tabs
 itemGroup.tabSoulcraft=Soulcraft

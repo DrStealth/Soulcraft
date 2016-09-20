@@ -5,12 +5,12 @@ import com.drstealth.soulcraft.reference.RegisterEnumRef;
 /**
  * Created by DrStealth on 8/20/2016.
  */
-public class ItemSoulManualV1 extends ItemSC
+public class ItemSoulManual extends ItemSC
 {
-    public ItemSoulManualV1()
+    public ItemSoulManual()
     {
         super();
-        setUnlocalizedName(RegisterEnumRef.SoulcraftItems.SOULMANUALV1.getUnlocalizedName());
-        setRegistryName(RegisterEnumRef.SoulcraftItems.SOULMANUALV1.getRegistryName());
+        setUnlocalizedName(RegisterEnumRef.SoulcraftItems.SOULMANUAL.getUnlocalizedName());
+        setRegistryName(RegisterEnumRef.SoulcraftItems.SOULMANUAL.getRegistryName());
     }
 }

@@ -7,7 +7,8 @@ public class RegisterEnumRef
 {
     public static enum SoulcraftItems
     {
-        SOULMANUALV1("soulManualV1", "ItemSoulManualV1");
+        SOULMANUAL("soulManual", "ItemSoulManual"),
+        SOULSHARD("soulShard", "ItemSoulShard");
 
         private String unlocalizedName;
         private String registryName;
@@ -31,7 +32,9 @@ public class RegisterEnumRef
 
     public static enum SoulcraftBlocks
     {
-        SOULGLASS("soulGlass", "BlockSoulGlass");
+        SOULGLASS("soulGlass", "BlockSoulGlass"),
+        SOULTANK("soulTank", "BlockSoulTank"),
+        SOULCOMPRESSOR("soulCompressor", "BlockSoulCompressor");
 
         private String unlocalizedName;
         private String registryName;
