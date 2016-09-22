@@ -14,4 +14,9 @@ public class BlockSC extends Block
         super(materialIn);
         setCreativeTab(Soulcraft.CREATIVE_TABS);
     }
+
+    public BlockSC()
+    {
+        this(Material.ROCK);
+    }
 }
